@@ -1,0 +1,163 @@
+/* Global Reset & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #222222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main Container */
+.resume-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+
+/* Header Styling (ID Selector) */
+#top-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 3px solid #1a365d;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.profile-pic {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1a365d;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+  color: #1a365d;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.contact-links {
+  font-size: 0.92rem;
+  color: #333333;
+}
+
+.contact-links a {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+  color: #1a365d;
+}
+
+/* Section Styling (Class Selector) */
+.cv-section {
+  margin-bottom: 24px;
+}
+
+.cv-section h2 {
+  font-size: 1.25rem;
+  color: #1a365d;
+  background-color: #edf2f7;
+  padding: 6px 12px;
+  border-left: 4px solid #1a365d;
+  margin-bottom: 12px;
+}
+
+.cv-section p {
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+/* Table Styling (Element Selectors) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th, td {
+  border: 1px solid #cbd5e0;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #1a365d;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+/* Lists & Project Blocks */
+ul {
+  margin-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.item-block {
+  margin-bottom: 12px;
+}
+
+.item-block h3 {
+  font-size: 1.05rem;
+  color: #2d3748;
+  margin-bottom: 3px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* Responsive Media Query for Mobile Screens */
+@media (max-width: 650px) {
+  body {
+    padding: 10px;
+  }
+
+  .resume-container {
+    padding: 20px;
+  }
+
+  #top-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  table, th, td {
+    font-size: 0.88rem;
+    padding: 8px;
+  }
+}
